@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programming Languages | <%= title %></title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <%- include('partials/header') %>
+
+        <main class="language-page">
+            <figure class="js-logo">
+                <img src="/img/<%= language.image %>" alt="JavaScript Logo">
+            </figure>
+
+            <section>
+                <h2><%= language.name %></h2>
+
+                <p><%= language.description %></p>
+
+                <h3>JavaScript is commonly used for...</h3>
+
+                <ul class="u-list">
+                    <% language.uses.forEach(use => { %>
+                        <li><%= use %></li>
+                    <% }); %>
+                </ul>
+
+                <h3>Example JavaScript Code</h3>
+
+                <pre><code><%= language.example %></code></pre>
+
+                <p>
+                    Source:
+                    <a href="<%= language.source %>"
+                    target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+                </p>
+            </section>
+
+            <section class="repositories">
+                <h2>Popular JavaScript GitHub Repositories</h2>
+
+                <p>Data from <a href source="https://api.github.com/search/repositories">GitHub API</a>.</p>
+
+                <% if (repositories.length > 0) { %>
+                    <% repositories.forEach(repo => { %>
+                        <div class="repository">
+
+                            <h3>
+                                <a href="<%= repo.html_url %>"
+                                target="_blank" rel="noopener noreferrer">
+                                    <%= repo.full_name %>
+                                </a>
+                            </h3>
+
+                            <p><%= repo.description || 'No description available.' %></p>
+
+                            <p>Stars: <%= repo.stargazers_count.toLocaleString() %></p>
+
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <p>GitHub repository information is currently unavailable.</p>
+                <% } %>
+            </section>
+
+            <section class="tech-phrase">
+                <h2>Random Phrase</h2>
+                <p><%= techPhrase %></p>
+                <p class="note">Data from the <a href="https://www.npmjs.com/package/@faker-js/faker">Faker Node.js package</a>.</p>
+            </section>
+        </main>
+        
+        <%- include('partials/footer') %>
+    </body>
+</html>

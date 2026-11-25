@@ -1,0 +1,239 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header, nav, main, footer {
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+    color: rgb(101, 10, 10);
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: rgb(132, 13, 13);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #98c2f9;
+    font-size: 2rem;
+    border-bottom: 2px solid orange;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+figure {
+    margin: 1rem auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9rem;
+}
+
+footer {
+    font-size: 12px;
+    color: #737373;
+    padding: 1rem;
+}
+
+nav a.current {
+    color: rgb(132, 13, 13);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(132, 13, 13);
+}
+
+#python-main,
+#javascript-main,
+#java-main {
+    display: block;
+    margin: 0 auto;
+}
+
+#table-header {
+    background-color: #173f73;
+    color: #FFFFFF;
+}
+
+.table-row {
+    background-color: #456ff9;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto 2rem;
+    width: 75%;
+}
+
+th, td {
+    border: 1px solid #dbe4f0;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.u-list {
+    border: 1px solid #dbe4f0;
+    background-color: #f6f6f8;
+    display: inline-block;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+iframe {
+    display: block;
+    width: min(100%, 40rem);
+    min-height: 40rem;
+    margin: 0 auto;
+    border: 1px solid #dbe4f0;
+}
+
+.logo, .p-logo, .js-logo, .j-logo {
+    width: 250px;
+    height: auto;
+}
+
+pre {
+    text-align: left;
+    background-color: #f6f6f8;
+    border: 1px solid #dbe4f0;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+h2, h3 {
+    color: rgb(132, 13, 13);
+}
+
+@media (max-width: 700px) {
+    nav a {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    main {
+        display: block;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+figure img {
+    object-fit: contain;
+}
+
+section {
+    box-shadow: 2px 2px 5px #cccccc;
+}
+
+.language-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.language-columns div {
+    padding: 1rem;
+    border: 1px solid #dbe4f0;
+    background-color: #f6f6f8;
+}
+
+@media (max-width: 700px) {
+    .language-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.language-page {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.repositories {
+    width: 100%;
+    max-width: 850px;
+    margin: 2rem auto;
+}
+
+.repository {
+    background-color: #f6f6f8;
+    border: 1px solid #dbe4f0;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.repository h3 {
+    margin-top: 0;
+}
+
+
+.tech-phrase {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f6f6f8;
+    border: 1px solid #dbe4f0;
+}
+
+.note {
+    color: #737373;
+    font-size: 0.9rem;
+}
+
+.cpp-logo {
+    width: 250px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.language-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.language-columns div {
+    padding: 1rem;
+    border: 1px solid #dbe4f0;
+    background-color: #f6f6f8;
+}
+
+@media (max-width: 700px) {
+    .language-columns {
+        grid-template-columns: 1fr;
+    }
+}

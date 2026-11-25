@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programming Languages | <%= title %></title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <%- include('partials/header') %>
+        <main>
+        <figure>
+            <img src="/img/pls.png" alt="Image of Programming Languages">
+
+            <figcaption>
+                <a href="https://careerkarma.com/blog/how-many-coding-languages-are-there/">
+                    There are over 50 widely used programming languages.
+                </a>
+            </figcaption>
+        </figure>
+
+        <section>
+            <h2>Introduction</h2>
+
+            <p>
+                A programming language is a way to express instructions that a
+                computer can execute. Programmers use languages to create software
+                including websites, mobile applications, games, and operating systems.
+            </p>
+
+            <p>
+                Different programming languages provide different rules for how
+                instructions are written, data is organized, and programs function.
+                Each language has its own strengths and weaknesses depending on
+                the purpose.
+            </p>
+
+            <p>
+                This website introduces four widely used programming languages:
+                Python, JavaScript, Java, and C++.
+            </p>
+        </section>
+
+        <section class="language-columns">
+
+            <div>
+                <h2>Python</h2>
+                <p>
+                    Python is known for its readable syntax and is commonly used
+                    for automation, data analysis, and artificial intelligence.
+                </p>
+                <a href="/python">Learn More</a>
+            </div>
+
+            <div>
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript is used to create interactive websites and
+                    develop both frontend and backend applications.
+                </p>
+                <a href="/javascript">Learn More</a>
+            </div>
+
+            <div>
+                <h2>Java</h2>
+                <p>
+                    Java is an object-oriented programming language commonly
+                    used for enterprise software and application development.
+                </p>
+                <a href="/java">Learn More</a>
+            </div>
+
+            <div>
+                <h2>C++</h2>
+                <p>
+                    C++ is known for its performance and is commonly used
+                    for game development, operating systems, and other
+                    high-performance applications.
+                </p>
+                <a href="/cpp">Learn More</a>
+            </div>
+        </section>
+
+        <section class="tech-phrase">
+            <h2>Random Phrase</h2>
+
+            <p><%= techPhrase %></p>
+
+            <p class="note">
+                Data from the <a href="https://www.npmjs.com/package/@faker-js/faker">Faker Node.js package</a>.
+            </p>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    </body>
+</html>
